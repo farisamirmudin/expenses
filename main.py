@@ -18,6 +18,9 @@ def append_new_value(sheet_name, df):
     writer.save()
 
 def main():
+    '''
+    Excel file will be saved at Documents/Expenses
+    '''
     home = str(Path.home())
     # os.chdir(os.path.dirname(__file__)) # Get the directory name of the current script and change working directory to it
     work_dir = f'{home}/Documents/Expenses' # Change working directory to Documents/Expenses
